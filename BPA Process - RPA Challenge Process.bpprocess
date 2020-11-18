@@ -1,0 +1,37 @@
+﻿<process name="RPA Challenge Process" version="1.0" bpversion="6.9.0.26970" narrative="" byrefcollection="true" preferredid="29eab603-d48e-486c-a446-4af1eaba588e" published="true">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.5625</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="bdf08adf-766c-4c18-ba19-87c425a36c4e" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>8aeaa233-5e73-43a5-a0dc-a02820ca66e0</onsuccess>
+  </stage>
+  <stage stageid="e6203787-9fd4-499c-935d-729f883d87f0" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="6d04fbef-f591-4890-aacc-82b1dba82b29" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="8aeaa233-5e73-43a5-a0dc-a02820ca66e0" name="Launch Application" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <onsuccess>bfcacb6b-730f-415b-ae2d-8c85830b334d</onsuccess>
+    <resource object="RPAChallenge" action="Launch Application" />
+  </stage>
+  <stage stageid="bfcacb6b-730f-415b-ae2d-8c85830b334d" name="Read Excel Data" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <onsuccess>47aebb30-773d-4202-ae7e-2e163521b2c8</onsuccess>
+    <resource object="RPAChallenge" action="Read Excel Data" />
+  </stage>
+  <stage stageid="47aebb30-773d-4202-ae7e-2e163521b2c8" name="Form Data" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <onsuccess>e6203787-9fd4-499c-935d-729f883d87f0</onsuccess>
+    <resource object="RPAChallenge" action="Form Data" />
+  </stage>
+</process>
